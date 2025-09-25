@@ -23,6 +23,8 @@ Abre tu terminal en la carpeta del proyecto y ejecuta:
 
 npm install
 
+---
+
 ## 3️⃣ Configurar tu wallet
 
 Crea un archivo .env en la raíz del proyecto con tus datos:
@@ -33,6 +35,7 @@ WALLET_ADDRESS=tu_direccion_de_wallet
 
 ⚠️ Nunca compartas tu clave privada.
 
+---
 
 ## 4️⃣ Configurar Truffle
 
@@ -50,6 +53,7 @@ truffle deploy --contract Simplex --network monad_testnet
 
 Cambia monad_testnet por ethereum_sepolia o bsc_testnet según la red.
 
+---
 
 ## 5️⃣ Compilar y desplegar
 
@@ -69,7 +73,7 @@ truffle migrate --contract Simplex --network <red>
 
 Truffle te dará un transaction hash, úsalo para verificar en el explorador de cada red.
 
-
+---
 
 Note: Para evitar errores recuerda seguir toda la guia al pie de la letra, es escencial para una correcta implementacion libre de fallas. Es importante nunca compartir tus "Frases & Claves privadas", es esta guia agregue el .env como ejemplo solamente, pero no es lo correcto cuando compartimos el codigo en GitHub o algun sitio publico.
 
