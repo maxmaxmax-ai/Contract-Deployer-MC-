@@ -1,0 +1,28 @@
+{
+  "name": "multichain-deployer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@layerzerolabs/lz-evm-oapp-v1": "^2.3.32",
+    "@layerzerolabs/lz-evm-oapp-v2": "^2.3.32",
+    "@layerzerolabs/verify-contract": "^1.1.28",
+    "@openzeppelin/contracts": "^4.9.6",
+    "@truffle/hdwallet-provider": "^2.0.14",
+    "bee-queue": "^1.4.0",
+    "bull": "^4.10.0",
+    "dotenv": "^16.0.1",
+    "truffle": "^5.11.5",
+    "update": "^0.7.4",
+    "web3": "^1.8.0"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.6.7"
+  }
+}
