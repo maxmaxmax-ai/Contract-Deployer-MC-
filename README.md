@@ -27,7 +27,7 @@ npm install
 
 ## 3️⃣ Configurar tu wallet
 
-Crea un archivo .env en la raíz del proyecto con tus datos:
+En este caso el archivo .env ya esta creado, solo debes agregar la clave privada de tu billetera y la direccion publica (Recuerda fondear tu Wallet).
 
 PRIVATE_KEY=tu_clave_privada
 WALLET_ADDRESS=tu_direccion_de_wallet
@@ -39,19 +39,20 @@ WALLET_ADDRESS=tu_direccion_de_wallet
 
 ## 4️⃣ Configurar Truffle
 
-El archivo truffle-config.js ya incluye configuraciones para varias redes.
-Cada red tiene su network_id, gas y gasPrice distintos.
+El archivo networkconfig.js ya incluye configuraciones para varias redes.
+Cada red tiene su network_id, gas y gasPrice distintos (Modifica segun la red a usar).
 
-El gas indica cuánta “energía” usará tu contrato
+Ejemplo (Red Monad): 
 
-El gasPrice varía según la red (Ethereum más caro, BSC barato, Monad intermedio)
+        gas: 5000000, // suficiente para desplegar un ERC20 simple
+        gasPrice: 100000000000, // 100 gwei en wei (mínimo recomendado en Monad)
 
 Ejemplo de despliegue:
 
 truffle deploy --contract Simplex --network monad_testnet
 
 
-Cambia monad_testnet por ethereum_sepolia o bsc_testnet según la red.
+Cambia monad_testnet por ethereum_sepolia o bsc_testnet según la red a usar (Para agregar mas redes solo modifica get.js y agrega la red de tu preferencia en la carpeta Networks).
 
 ---
 
@@ -64,7 +65,11 @@ truffle compile
 
 Luego despliega:
 
-truffle migrate --contract Simplex --network <red>
+truffle migrate --contract Simplex --network <red> o truffle deploy --contract Simplex --network <red>
+
+Ejemplo:
+
+truffle deploy --contract Simplex --network monad_tesnet 
 
 
 --contract Simplex → despliega solo ese contrato
