@@ -1,1 +1,1 @@
-### Despliega contratos inteligentes en cualquier blockchain compatible con EVM y solidity
+### Despliega contratos inteligentes en cualquier blockchain compatible con EVM.
