@@ -75,6 +75,6 @@ Truffle te dará un transaction hash, úsalo para verificar en el explorador de 
 
 ---
 
-Note: Para evitar errores recuerda seguir toda la guia al pie de la letra, es escencial para una correcta implementacion libre de fallas. Es importante nunca compartir tus "Frases & Claves privadas", es esta guia agregue el .env como ejemplo solamente, pero no es lo correcto cuando compartimos el codigo en GitHub o algun sitio publico.
+Note: Para evitar errores recuerda seguir toda la guia al pie de la letra, es escencial para una correcta implementacion libre de Errores. Es importante nunca compartir tus "Frases & Claves privadas", en esta guia agregue el .env como ejemplo solamente, pero no es lo correcto cuando compartimos el codigo en GitHub o algun sitio publico.
 
 
